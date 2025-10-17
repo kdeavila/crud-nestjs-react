@@ -139,16 +139,6 @@ pnpm run test:cov
 - **TailwindCSS** - Estilos
 - **Axios** - Cliente HTTP
 
-## 📝 Criterios de Evaluación Cubiertos
-
-| Criterio | Ponderación | Estado |
-|----------|-------------|--------|
-| Estructura y claridad del código | 25 pts | ✅ Completado |
-| Cumplimiento funcional (CRUD, validaciones) | 25 pts | ✅ Completado |
-| Buenas prácticas y manejo de errores | 20 pts | ✅ Completado |
-| Documentación detallada y explicativa | 20 pts | ✅ Completado |
-| Tests / Bonus / Extras | 10 pts | ✅ Tests unitarios |
-
 ## 🔌 Endpoints de la API
 
 ### Health Check
@@ -174,28 +164,14 @@ La API maneja correctamente:
 - **404 Not Found**: Recursos no encontrados
 - **500 Internal Server Error**: Errores del servidor
 
-## 📄 Licencia
-
-MIT
-
 ## 👤 Autor
 
-Desarrollado como parte de la prueba técnica de **Novacore**.
-
-**Contacto Novacore:**
-- Email: contacto@novacore.com.co
-- WhatsApp: +57 314 400 0253
+Keyner de Ávila
+Desarrollado como parte de la prueba técnica de Novacore.
 
 ---
 
 ## 📌 Notas de Desarrollo
-
-### Próximos Pasos
-1. ✅ Backend completado
-2. 🚧 Implementar frontend React
-3. 🚧 Agregar tests E2E
-4. 🚧 Dockerizar la aplicación
-5. 🚧 CI/CD pipeline
 
 ### Decisiones Técnicas
 

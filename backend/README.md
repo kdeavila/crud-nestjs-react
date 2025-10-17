@@ -339,10 +339,8 @@ Para modificar los orígenes permitidos, edita `src/main.ts`:
 app.enableCors({origin: 'http://localhost:3000'});
 ```
 
-## 📄 Licencia
-
-MIT
 
 ## 👤 Autor
 
+Keyner de Ávila
 Desarrollado como parte de la prueba técnica de Novacore.
