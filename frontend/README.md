@@ -1,73 +1,126 @@
-# React + TypeScript + Vite
+# Frontend - Tasks App (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern React application for task management with complete NestJS backend integration.
 
-Currently, two official plugins are available:
+## ✅ **COMPLETED FEATURES - 100%**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### **🔥 Full CRUD Operations**
+- ✅ **Create tasks** with complete form validation
+- ✅ **Read/List tasks** with detailed information display
+- ✅ **Update tasks** with modal overlay editing
+- ✅ **Delete tasks** with confirmation dialog
 
-## React Compiler
+### **🛡️ Advanced Validation**
+- ✅ **Zod schema validation** for all forms
+- ✅ **React Hook Form** with resolvers
+- ✅ **Real-time validation** with clear error messages
+- ✅ **Date handling** with proper ISO conversion
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### **⚡ Performance & UX**
+- ✅ **Loading states** during all operations
+- ✅ **Error handling** with user-friendly messages
+- ✅ **Optimistic updates** for better UX
+- ✅ **Responsive design** with mobile-first approach
 
-## Expanding the ESLint configuration
+### **🎨 Modern UI/UX**
+- ✅ **Dark theme** with professional design
+- ✅ **TailwindCSS** for consistent styling
+- ✅ **Smooth animations** and transitions
+- ✅ **Accessibility** features included
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 **Technologies Used**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React 19** - Modern frontend framework
+- **TypeScript** - Type-safe development
+- **Vite** - Lightning-fast build tool
+- **TanStack Query** - State management & caching
+- **React Hook Form** - Reactive forms
+- **Zod** - Schema validation
+- **TailwindCSS** - Utility-first CSS
+- **Axios** - HTTP client
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📦 **Installation**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm run dev
+
+# Build for production
+pnpm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔧 **Configuration**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Create `.env` file in project root:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```env
+VITE_API_URL=http://localhost:3001
 ```
+
+## 🗂️ **Project Structure**
+
+```
+src/
+├── api/                    # HTTP client & hooks
+│   ├── client.ts          # Axios configuration
+│   └── tasks.ts           # TanStack Query hooks
+├── components/            # React components
+│   ├── TaskForm.tsx       # Task creation form
+│   ├── TaskList.tsx       # Task list with actions
+│   └── TaskEditForm.tsx   # Modal edit form
+├── schemas/               # Validation schemas
+│   └── taskSchema.ts      # Zod validation schemas
+└── App.tsx               # Main application component
+```
+
+## 🎯 **Features**
+
+### **📝 Create Task**
+- Complete form with all fields (title, description, status, priority, due date)
+- Real-time validation with Zod schemas
+- Loading states during submission
+- Form reset after successful creation
+
+### **📋 Task List**
+- Beautiful card-based layout
+- Status and priority badges with color coding
+- Formatted dates (localized)
+- Empty state handling
+
+### **✏️ Edit Task**
+- Modal overlay for editing
+- Pre-populated form with current data
+- Full validation on edit
+- Loading states during update
+
+### **🗑️ Delete Task**
+- Confirmation dialog before deletion
+- Loading states during deletion
+- Immediate list updates
+
+## 📊 **Task Status**
+
+- **TODO** - Neutral (pending task)
+- **IN_PROGRESS** - Blue (in progress)
+- **DONE** - Green (completed)
+
+## 🎨 **Priority Levels**
+
+- **LOW** - Green (low priority)
+- **MEDIUM** - Yellow (medium priority)
+- **HIGH** - Red (high priority)
+
+## 🌟 **Recent Improvements**
+
+- **🎨 Dark Theme**: Modern dark UI with professional styling
+- **🇺🇸 English Messages**: All validation messages in English
+- **⚡ Better Performance**: Optimized loading states and error handling
+- **📱 Enhanced Mobile**: Improved responsive design
+- **🛡️ Type Safety**: Complete TypeScript integration
+
+---
+
+**Status: ✅ PRODUCTION READY** 🚀

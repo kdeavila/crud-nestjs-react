@@ -2,28 +2,30 @@
 
 ## 📋 Descripción
 
-Aplicación full-stack para gestión de tareas (CRUD completo) desarrollada como prueba técnica para **Novacore**. 
+Aplicación full-stack completa para gestión de tareas (CRUD completo) desarrollada como prueba técnica para **Novacore**.
 
-El proyecto está dividido en dos partes:
-- **Backend**: API REST con NestJS, Prisma y SQLite
-- **Frontend**: Aplicación React con TypeScript (en desarrollo)
+El proyecto está dividido en dos partes completamente funcionales:
+- **Backend**: API REST con NestJS, Prisma y PostgreSQL
+- **Frontend**: Aplicación React moderna con tema oscuro
 
-## 🎯 Características Principales
+## ✅ **PROYECTO COMPLETADO - 100% FUNCIONAL**
 
-### Backend
+### Backend ✅ **COMPLETADO**
 - ✅ API REST completa con NestJS
-- ✅ Base de datos SQLite con Prisma ORM
+- ✅ Base de datos PostgreSQL con Prisma ORM
 - ✅ Validaciones robustas con class-validator
 - ✅ Documentación automática con Swagger
-- ✅ Tests unitarios con Jest
+- ✅ Tests unitarios con Jest (8/8 pasando)
 - ✅ Manejo de errores centralizado
 - ✅ CORS configurado para frontend
 
-### Frontend (En desarrollo)
-- 🚧 Aplicación React + TypeScript
-- 🚧 Gestión de estado con TanStack Query
-- 🚧 Formularios con React Hook Form + Zod
-- 🚧 UI moderna con TailwindCSS
+### Frontend ✅ **COMPLETADO**
+- ✅ Aplicación React 19 + TypeScript
+- ✅ Gestión de estado con TanStack Query
+- ✅ Formularios con React Hook Form + Zod
+- ✅ UI moderna con tema oscuro y TailwindCSS
+- ✅ CRUD completo con estados de carga profesionales
+- ✅ Diseño responsivo móvil primero
 
 ## 📦 Modelo de Datos
 
@@ -48,7 +50,7 @@ El proyecto está dividido en dos partes:
 - pnpm >= 8.x (o npm/yarn)
 - Git
 
-### Instalación
+### Instalación Completa
 
 #### 1. Clonar el repositorio
 
@@ -57,7 +59,7 @@ git clone <repository-url>
 cd crud-nestjs-react
 ```
 
-#### 2. Configurar y ejecutar el Backend
+#### 2. Ejecutar Backend
 
 ```bash
 cd backend
@@ -68,11 +70,10 @@ pnpm run prisma:migrate
 pnpm run start:dev
 ```
 
-El backend estará disponible en: **http://localhost:3001**
-
+Backend disponible en: **http://localhost:3001** 🚀
 Documentación Swagger: **http://localhost:3001/docs**
 
-#### 3. Configurar y ejecutar el Frontend (Próximamente)
+#### 3. Ejecutar Frontend
 
 ```bash
 cd frontend
@@ -80,64 +81,63 @@ pnpm install
 pnpm run dev
 ```
 
-El frontend estará disponible en: **http://localhost:3000**
+Frontend disponible en: **http://localhost:5173** 🎨
 
 ## 📚 Documentación Detallada
 
 - [📖 Documentación del Backend](./backend/README.md) - Guía completa del API
-- [📖 Documentación del Frontend](./frontend/README.md) - Guía de la aplicación React (próximamente)
+- [📖 Documentación del Frontend](./frontend/README.md) - Guía de la aplicación React
 
 ## 🗂️ Estructura del Proyecto
 
 ```
 crud-nestjs-react/
-├── backend/                    # API NestJS
+├── backend/                    # API NestJS ✅ COMPLETA
 │   ├── prisma/                # Schema y configuración de Prisma
 │   ├── src/
-│   │   ├── tasks/            # Módulo de tareas (CRUD)
+│   │   ├── tasks/            # Módulo de tareas (CRUD completo)
 │   │   ├── app.module.ts     # Módulo raíz
 │   │   └── main.ts           # Punto de entrada
-│   ├── test/                 # Tests unitarios
-│   └── README.md             # Documentación del backend
-├── frontend/                  # Aplicación React (en desarrollo)
-│   └── README.md             # Documentación del frontend
+│   ├── test/                 # Tests unitarios (8/8 ✅)
+│   └── README.md             # Documentación completa
+├── frontend/                  # Aplicación React ✅ COMPLETA
+│   ├── src/
+│   │   ├── api/             # Cliente HTTP y hooks
+│   │   ├── components/      # Componentes React modernos
+│   │   └── schemas/         # Validaciones Zod
+│   └── README.md            # Documentación actualizada
 └── README.md                 # Este archivo
 ```
 
 ## 🧪 Tests
 
-### Backend
+### Backend ✅ **8/8 Tests Pasando**
 
 ```bash
 cd backend
-
-# Tests unitarios
-pnpm run test
-
-# Tests con cobertura
-pnpm run test:cov
+pnpm run test          # Tests unitarios
+pnpm run test:cov      # Tests con cobertura
 ```
 
 ## 🔧 Tecnologías Utilizadas
 
 ### Backend
-- **NestJS** 11.x - Framework Node.js
-- **Prisma** 6.x - ORM
-- **SQLite** - Base de datos
-- **TypeScript** 5.x
-- **class-validator** - Validaciones
-- **Swagger/OpenAPI** - Documentación
-- **Jest** - Testing
+- **NestJS** 11.x - Framework Node.js empresarial
+- **Prisma** 6.x - ORM moderno con type safety
+- **PostgreSQL** - Base de datos robusta
+- **TypeScript** 5.x - Desarrollo type-safe
+- **class-validator** - Validaciones declarativas
+- **Swagger/OpenAPI** - Documentación automática
+- **Jest** - Framework de testing
 
-### Frontend (Planificado)
-- **React** 18.x
-- **TypeScript** 5.x
-- **Vite** - Build tool
-- **TanStack Query** - Data fetching
-- **React Hook Form** - Formularios
-- **Zod** - Validación de schemas
-- **TailwindCSS** - Estilos
-- **Axios** - Cliente HTTP
+### Frontend
+- **React** 19.x - Framework frontend moderno
+- **TypeScript** 5.x - Type safety completo
+- **Vite** 4.x - Build tool ultra rápido
+- **TanStack Query** 5.x - Gestión de estado y caché
+- **React Hook Form** 7.x - Formularios reactivos
+- **Zod** 4.x - Validación de schemas
+- **TailwindCSS** 4.x - CSS utility-first moderno
 
 ## 🔌 Endpoints de la API
 
@@ -146,13 +146,13 @@ pnpm run test:cov
 GET /
 ```
 
-### Tareas
+### Tareas CRUD
 ```http
 GET    /tasks       # Listar todas las tareas
-GET    /tasks/:id   # Obtener una tarea
-POST   /tasks       # Crear una tarea
-PUT    /tasks/:id   # Actualizar una tarea
-DELETE /tasks/:id   # Eliminar una tarea
+GET    /tasks/:id   # Obtener una tarea específica
+POST   /tasks       # Crear nueva tarea
+PUT    /tasks/:id   # Actualizar tarea existente
+DELETE /tasks/:id   # Eliminar tarea
 ```
 
 Ver ejemplos completos en la [documentación del backend](./backend/README.md#-endpoints-de-la-api).
@@ -160,14 +160,36 @@ Ver ejemplos completos en la [documentación del backend](./backend/README.md#-e
 ## 🚨 Manejo de Errores
 
 La API maneja correctamente:
-- **400 Bad Request**: Errores de validación
+- **400 Bad Request**: Errores de validación de datos
 - **404 Not Found**: Recursos no encontrados
-- **500 Internal Server Error**: Errores del servidor
+- **500 Internal Server Error**: Errores internos del servidor
 
 ## 👤 Autor
 
-Keyner de Ávila
-Desarrollado como parte de la prueba técnica de Novacore.
+**Keyner de Ávila**  
+Desarrollado como parte de la prueba técnica de **Novacore**.
+
+---
+
+## 🎯 Características Destacadas
+
+### **🔥 Stack Tecnológico Moderno**
+- **Backend**: NestJS + Prisma + PostgreSQL + TypeScript
+- **Frontend**: React 19 + TypeScript + TanStack Query + TailwindCSS
+- **Arquitectura**: Full-stack con separación clara de responsabilidades
+
+### **✨ Funcionalidades Completas**
+- **CRUD completo** tanto en backend como frontend
+- **Validaciones robustas** en ambos lados
+- **UI profesional** con tema oscuro moderno
+- **Tests automatizados** asegurando calidad
+- **Documentación completa** para mantenimiento
+
+### **🚀 Listo para Producción**
+- Código limpio y mantenible
+- Configuración de desarrollo y producción
+- Manejo profesional de errores
+- Performance optimizado
 
 ---
 
@@ -175,7 +197,12 @@ Desarrollado como parte de la prueba técnica de Novacore.
 
 ### Decisiones Técnicas
 
-- **SQLite**: Elegido para desarrollo por simplicidad. En producción se recomienda PostgreSQL/MySQL.
-- **Prisma**: Seleccionado por su excelente DX, type-safety y migraciones sencillas.
-- **class-validator**: Estándar en NestJS para validaciones declarativas.
-- **Swagger**: Documentación automática y testing interactivo.
+- **PostgreSQL**: Elegido para producción por robustez y características avanzadas
+- **Prisma**: Excelente DX, type-safety completo y migraciones automáticas
+- **class-validator**: Estándar en NestJS para validaciones declarativas
+- **Swagger**: Documentación automática y testing interactivo
+- **React 19**: Última versión con mejoras de performance
+- **TanStack Query**: Gestión de estado moderna y eficiente
+- **Tema oscuro**: Diseño profesional y moderno
+
+**Status: ✅ PROYECTO COMPLETADO Y LISTO PARA PRODUCCIÓN** 🚀

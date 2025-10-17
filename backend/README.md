@@ -331,12 +331,12 @@ Ejemplo de respuesta de error:
 ## 🔐 CORS
 
 CORS está habilitado para permitir peticiones desde:
-- `http://localhost:3000` (frontend React)
+- `http://localhost:5173` (frontend React)
 
 Para modificar los orígenes permitidos, edita `src/main.ts`:
 
 ```typescript
-app.enableCors({origin: 'http://localhost:3000'});
+app.enableCors({origin: 'http://localhost:5173'});
 ```
 
 
